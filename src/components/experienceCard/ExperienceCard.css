@@ -1,170 +1,153 @@
-@font-face{
-    font-family: "cassette";
-    font-size: 40px;
-    src: url("../../components/header/Chasing.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "cassette";
+  src: url("../../components/header/Chasing.ttf") format("truetype");
+}
   
-  @font-face{
-    font-family: "BeautyDemo";
-    font-size: 40px;
-    src: url("../../components/header/BeautyDemo.ttf") format("truetype");
-  }
-.experience-card {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .experience-card-logo-div {
-    margin: 10px;
-  }
-  
-  .experience-card-body-div {
-    width: 100%;
-  }
-  
-  .experience-card-header-div {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .experience-card-logo {
-    width: 70px;
-  }
-  
-  .experience-card-title {
-    font-family: "cassette";
-    margin-top: 10px;
-    margin-bottom: 2px;
-    margin-left: 0px;
-    margin-right: 7px;
-    text-align: left;
-  }
-  
-  .experience-card-company {
-    font-family: "cassette";
-    margin: 0;
-    text-align: left;
-  }
-  
-  .experience-card-duration {
-    font-family: "cassette";
-    margin-top: 10px;
-    margin-bottom: 2px;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: right;
-    color: #868e96;
-  }
-  
-  .experience-card-heading-left {
-    float: left;
-    margin-left: 10px;
-    margin-right: auto;
-  }
-  
-  .experience-card-heading-right {
-    float: right;
-    margin-left: auto;
-    margin-right: 10px;
-  }
-  
-  .experience-card-location {
-    font-family: "cassette";
-    margin: 0;
-    text-align: right;
-    color: #43474b;
-  }
-  
-  .experience-card-description {
-    margin-top: 5px;
-    margin-left: 10px;
-    text-align: justify;
-    margin-right: 20px;
-    font-family: "cassette";
-  }
-  
-  .experience-card-company > a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .experience-card-company > a:hover {
-    color: #000;
-  }
-  
-  .experience-card-company > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-  
-  .experience-card-company > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  
-  @media (max-width: 768px) {
-    .experience-card {
-      margin-bottom: 10px;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .experience-card-logo {
-      width: 100px;
-    }
+@font-face {
+  font-family: "BeautyDemo";
+  src: url("../../components/header/BeautyDemo.ttf") format("truetype");
+}
 
-    .experience-card-heading-left {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* ==========================================================================
+   GLOBAL DESKTOP VIEW LAYOUT (Logo Left, Text Content Right)
+   ========================================================================== */
+
+.experience-card-main-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
   
-    .experience-card-heading-right {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  /* FIXED GLOBAL ROOT: Centers your logos on desktop screens cleanly */
+  align-items: center !important; 
   
-    .experience-card-title {
-      text-align: center;
-    }
+  gap: 50px !important;
+  width: 100% !important;
+  margin-bottom: 45px !important;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE COLUMN: Fixed Logo Box Framework */
+.experience-card-logo-aside {
+  flex: 0 0 160px !important;
+  display: flex !important;
   
-    .experience-card-company {
-      text-align: center;
-    }
-  
-    .experience-card-duration {
-      margin-top: 2px;
-      text-align: center;
-    }
-  
-    .experience-card-location {
-      /* text-align: left; */
-      text-align: center;
-    }
-  
-    .experience-card-header-div {
-      flex-direction: column;
-    }
-  
-    .experience-card-description {
-      margin-left: 14px;
-      margin-right: 14px;
-      text-align: justify;
-    }
+  /* FIXED GLOBAL ROOT: Centers your logo images inside their sidebar box */
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: center !important;
+}
+
+.experience-card-vendor-logo {
+  width: 100% !important;
+  max-width: 150px !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* RIGHT SIDE COLUMN: Elegant Card Layout Panel */
+.experience-card-content-block {
+  flex: 1 !important;
+  background-color: #e2e8f0;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   INTERNAL CARD TYPOGRAPHY & SEGMENTS
+   ========================================================================== */
+
+.experience-card-header-banner {
+  background-color: #93b17c !important; /* Matches your education panel green */
+  padding: 18px 24px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.experience-card-heading-left-group {
+  text-align: left !important;
+}
+
+.experience-card-role-title {
+  font-family: "Segoe UI", -apple-system, sans-serif !important;
+  color: #1a202c !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.experience-card-company-link a {
+  font-family: "Segoe UI", -apple-system, sans-serif !important;
+  color: #2d3748 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-decoration: none;
+}
+
+.experience-card-company-link a:hover {
+  text-decoration: underline;
+}
+
+.experience-card-heading-right-group {
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: right !important;
+  font-family: "Segoe UI", -apple-system, sans-serif !important;
+  color: #2d3748 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.experience-card-date-duration {
+  font-weight: 600 !important;
+}
+
+.experience-card-details-body {
+  padding: 24px !important;
+  background-color: #f7fafc !important;
+  text-align: left !important;
+  box-sizing: border-box;
+  width: 100% !important;
+}
+
+.experience-card-bullet-text {
+  font-family: "Segoe UI", -apple-system, sans-serif !important;
+  color: #2d3748 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+  white-space: pre-line !important;
+}
+
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE RECONFIGURATIONS
+   ========================================================================== */
+@media (max-width: 768px) {
+  .experience-card-main-wrapper {
+    /* Stacks columns vertically on compact mobile screens */
+    flex-direction: column !important; 
+    align-items: center !important;
+    gap: 20px !important;
   }
+
+  .experience-card-logo-aside {
+    flex: 0 0 auto !important;
+    width: 120px !important;
+  }
+
+  .experience-card-header-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+
+  .experience-card-heading-right-group {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+}

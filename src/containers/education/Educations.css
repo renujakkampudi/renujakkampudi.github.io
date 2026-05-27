@@ -1,38 +1,73 @@
-
-@font-face{
-    font-family: "cassette";
-    font-size: 40px;
-    src: url("../../components/header/Chasing.ttf") format("truetype");
-  }
-  
-  @font-face{
-    font-family: "BeautyDemo";
-    font-size: 40px;
-    src: url("../../components/header/BeautyDemo.ttf") format("truetype");
-  }
-
-.educations-header {
-  font-size: 40px;
-  line-height: 1.1;
+@font-face {
   font-family: "cassette";
+  src: url("../../components/header/Chasing.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BeautyDemo";
+  src: url("../../components/header/BeautyDemo.ttf") format("truetype");
+}
+
+/* Page Section Titles remain in your signature script style */
+.educations-header,
+.heading-ed-title {
+  font-size: 50px;
+  line-height: 1.1;
+  font-family: "cassette", sans-serif;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
+/* ==========================================================================
+   DEGREE CARD TYPOGRAPHY ENFORCEMENT
+   ========================================================================== */
 
-
-
-@media (max-width:1380px){
-    .educations-header{
-        font-size: 35px;
-        font-family: "cassette";
-
-    }
+/* Overrides the school name titles (e.g., Arizona State University) */
+[class*="degree-card"] h2,
+[class*="degree"] h2,
+.degree-card-title {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px;
 }
 
-@media (max-width:768px){
-    .educations-header{
-        font-size: 30px;
-        font-family: "cassette";
+/* Overrides degree names and dates (e.g., Master of Science / 2024 - 2026) */
+[class*="degree-card"] h5,
+[class*="degree"] h5,
+[class*="duration"],
+.degree-card-subtitle {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
 
-    }
+/* Overrides bullet-point descriptions */
+[class*="degree-card"] p,
+[class*="degree"] p,
+.degree-card-body {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+/* Media Query Scale downs */
+@media (max-width: 1380px) {
+  .educations-header {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .educations-header {
+    font-size: 32px;
+  }
+}
+
+/* Targets the parent grid wrapper holding your university cards */
+[class*="education-cards-div"],
+[class*="degree-cards-div"],
+div:has(> [class*="degree-card"]) {
+  margin-bottom: 80px !important; /* Generous, clean spacing before the next section */
 }

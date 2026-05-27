@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="footer-div">
       <Fade>
-        <p className="footer-text">Developed by Rushabh Patel</p>
+        <p className="footer-text">Renu Jakkampudi</p>
       </Fade>
       
 

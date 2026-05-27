@@ -14,7 +14,7 @@ function Header() {
 				<header className="header">
 
 					<NavLink to="/splash" tag={Link} className="logo">
-						<span className="logo-name"> Rushabh Patel</span>
+						<span className="logo-name"> Renu Jakkampudi</span>
 					</NavLink>
 					<input className="menu-btn" type="checkbox" id="menu-btn" />
 					<label className="menu-icon" htmlFor="menu-btn">
@@ -42,9 +42,21 @@ function Header() {
 								tag={Link}
 								activeStyle={{ fontWeight: "bold", color: themeMode === "lightTheme" ? "#277aa9":"#a8c66b" }}
 							>
-								Education
+								Education and Skills
 							</NavLink>
 						</li>
+
+						<li>
+							<NavLink
+								to="/projects"
+								tag={Link}
+								activeStyle={{ fontWeight: "bold" , color: themeMode === "lightTheme" ? "#277aa9":"#a8c66b"}}
+							>
+								Projects
+							</NavLink>
+						</li>
+
+						
 						<li>
 							<NavLink
 								to="/experience"
@@ -52,22 +64,6 @@ function Header() {
 								activeStyle={{ fontWeight: "bold" , color: themeMode === "lightTheme" ? "#277aa9":"#a8c66b"}}
 							>
 								Experience
-							</NavLink>
-						</li>
-					
-            <li>
-            <a href="https://rushabh.info/react-blog-github/#/">Blogs</a>
-
-            </li>
-						<li>
-							<NavLink
-								to="/contact"
-                className = "test_active"
-								tag={Link}
-                exact
-                activeStyle={{ fontWeight: "bold" , color:'#a8c66b'}}
-							>
-								Contact Me
 							</NavLink>
 						</li>
 

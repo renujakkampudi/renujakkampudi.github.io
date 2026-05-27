@@ -206,3 +206,9 @@ color: #868e96;
 
 
 
+.basic-education img, 
+.degree-card img, 
+.avatar-img,
+[class*="img"] {
+  transform: none !important;
+}

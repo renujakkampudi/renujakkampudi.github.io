@@ -1,5 +1,3 @@
-/* Change this file to get your personal Porfolio */
-
 const theme = {
   primaryTheme: "#6C63FF",
   secondaryTheme: "#55198b",
@@ -7,26 +5,21 @@ const theme = {
 };
 
 const greeting = {
-	/* Your Summary And Greeting Section */
-	//title: "Hi all 👋 I'm Saad",
-	title: "Hi I am Rushabh !!!",
-	//nickname: "layman_brother",
-	// subTitle:
-	//   "A passionate data scientist 🚀 having 3+ years of experience and in-depth knowledge of database types, statistical research methodologies, and big data capture, curation, manipulation and visualization",
-	subTitle:
-		"A passionate data scientist having 3+ years of experience and in-depth knowledge of database types, statistical research methodologies, and big data capture, curation, manipulation and visualization",
-	resumeLink:
-		"Resume.pdf"
+  username: "Renu Jakkampudi",
+  title: "Renu Jakkampudi",
+  nickname: "renujakkampudi",
+  subTitle:
+    "I turn messy data into meaningful decisions. MS Data Science graduate from ASU with hands-on experience building ML models, data pipelines, and AI-powered applications — now looking for my next challenge.",
+  resumeLink:
+    "https://example.com/your-resume.pdf", // Swap this with your actual Google Drive or hosted resume link later
+  portfolio_repository: "https://github.com/renujakkampudi/renujakkampudi.github.io",
 };
 
 const socialMediaLinks = {
 	/* Your Social Media Link */
-	github: "https://github.com/rushabh31",
-	linkedin: "https://www.linkedin.com/in/rushabhpatel5/",
-	gmail: "rushabh.patel5@gmail.com",
-	facebook: "https://www.facebook.com/rpate307/",
-	twitter: "https://twitter.com/rushabhpatel5",
-	instagram: "https://www.instagram.com/rushabhpatel5/"
+	github: "https://github.com/renujakkampudi",
+	linkedin: "https://www.linkedin.com/in/renu-jakkampudi-451224203/",
+	gmail: "jakkampudi.renu2002@gmail.com",
 };
 
 const skills = {
@@ -221,141 +214,96 @@ const competitiveSites = {
 const degrees = {
   degrees : [
     {
-      title: "Symbiosis International University",
-      subtitle: "B.Tech. in Computer Science",
-      logo_path: "siu.png",
-      alt_name: "SIU",
-      duration: "2011 - 2015",
-      descriptions: [" - Bachelor of Technology (B.Tech) in Computer Science"
-      ],
-      website_link: "http://siu.edu.in"
-    },
-
-    {
-      title: "University of Illinois",
-      subtitle: "MS in Computer Science",
-      logo_path: "uis.png",
-      alt_name: "UIS",
-      duration: "2016 - 2017",
+      title: "Arizona State University",
+      subtitle: "Master of Science in Data Science (Computing and Decision Analytics)",
+      logo_path: "asu_logo.png", // You can drop an ASU logo image into src/assests/images/ later
+      alt_name: "ASU",
+      duration: "2024 - 2026",
       descriptions: [
-        " - Master of Science (MS) in Computer Science GPA - (4.0/4.0)"," - Honors In Computer Science ( For best Academics and Research)"
-        ],
-      website_link: "http://uis.edu"
-    },
-
-    {
-      title: "Temple University",
-      subtitle: "PhD in Computer Science",
-      logo_path: "temple.png",
-      alt_name: "temple",
-      duration: "2020 - Present",
-      descriptions: [
-        " - Started PhD in Computer Science (Artificial Intelligence and Applications Track) under the supervision of Dr. Longin Jan Latecki (https://cis.temple.edu/~latecki/)"
+        " - Concluded graduate studies with a perfect 4.0 / 4.0 GPA.",
+        " - Specialized in core machine learning pipelines, scalable backend engineering, and data warehouse architectures.",
+        " Coursework : Data Processing at Scale, Data Mining, Statistics for Data Analysts, Statistical Machine Learning, Analyzing Big Data, Semantic Web Mining, Computing Data-Driven Optimization."
       ],
-      website_link: "http://temple.edu"
+      website_link: "https://www.asu.edu"
+    },
+    {
+      title: "Vellore Institute of Technology",
+      subtitle: "Bachelor of Science in Computer Science and Engineering",
+      logo_path: "vit_logo.png", // You can drop a VIT logo image into src/assests/images/ later
+      alt_name: "VIT",
+      duration: "2020 - 2024",
+      descriptions: [
+        " - Built a strong foundation in advanced data structures, algorithmic design, and software engineering principles principles using Python, C and C++.",
+        "Coursework: Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networks, Artificial Intelligence, Machine Learning, Software Engineering."
+      ],
+      website_link: "https://vit.ac.in"
     }
-
-
-
   ]
-}
+};
 
 const certifications = {
-	certifications: [
-		{
-			title: "R",
-			subtitle: "Years of Experience: 3+\n Expertise: Advanced",
-			logo_path: "rlogo.png",
-			color_code: "#264653"
-		},
-		{
-			title: "Python",
-			subtitle: "Years of Experience: 2+\n Expertise: Intermediate",
-			logo_path: "pythonlogo.png",
-			color_code: "#264653"
-		},
-		{
-			title: "Apache Spark",
-			subtitle: " Years of Experience: 1+\n Expertise: Begineer",
-			logo_path: "sparklogo.png",
-			certificate_link:
-				"https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-			alt_name: "Google",
-			color_code: "#264653"
-		},
-		{
-			title: "Scala",
-			subtitle: "Years of Experience: 2+\n Expertise: Intermediate",
-			logo_path: "scalalogo.png",
-			color_code: "#b56576"
-		},
-		{
-			title: "Redshift",
-			subtitle: "Years of Experience: 2+\n Expertise: Intermediate",
-			logo_path: "redshiftlogo.png",
-			color_code: "#b56576"
-		},
-		{
-			title: "Tableau",
-			subtitle: "Years of Experience: 1+\n Expertise: Begineer",
-			logo_path: "tableaulogo.png",
-			color_code: "#b56576"
-		},
-		{
-			title: "H2O.ai",
-			subtitle: "Years of Experience: 2+\n Expertise: Intermediate",
-			logo_path: "h2ologo.png",
-			color_code: "#1b4332"
-		},
-		{
-			title: "Tensorflow",
-			subtitle: "Years of Experience: < 1\n Expertise: Begineer",
-			logo_path: "tflogo.png",
-			color_code: "#1b4332"
-		},
-		{
-			title: "PyTorch",
-			subtitle: "Years of Experience: < 1 \n Expertise: Begineer",
-			logo_path: "pytorch-logo.png",
-			color_code: "#1b4332"
-		},
-		{
-			title: "R Shiny",
-			subtitle: "Years of Experience: 3+\n Expertise: Advanced",
-			logo_path: "shinylogo.png",
-			color_code: "#5f0f40"
-		},
-		{
-			title: "GGPLOT2",
-			subtitle: "Years of Experience: 3+\n Expertise: Advanced",
-			logo_path: "ggplotlogo.png",
-			color_code: "#5f0f40"
-		},
-		{
-			title: "SQL",
-			subtitle: "Years of Experience: 3+\n Expertise: Advanced",
-			logo_path: "sqllogo.png",
-			color_code: "#5f0f40"
-		}
-	]
+  certifications: [
+    {
+      title: "Oracle Machine Learning Autonomous Database Specialist",
+      subtitle: "Enterprise Database Optimization & Cloud ML Deployment",
+      logo_path: "oracle_logo.png", // Temporarily using gcp_logo placeholder, or use a custom oracle icon later
+      color_code: "#264653"
+    },
+    {
+      title: "Google Advanced Data Analytics",
+      subtitle: "Professional Certification — Statistical Modeling & Predictive Analysis",
+      logo_path: "google_logo.png",
+      color_code: "#264653"
+    },
+    {
+      title: "Python",
+      subtitle: "Expertise: Core DSA, Predictive Modeling & Advanced Scripting",
+      logo_path: "pythonlogo.png",
+      color_code: "#264653"
+    },
+    {
+      title: "PyTorch",
+      subtitle: "Expertise: Deep Learning, Emotion Detection & Computer Vision",
+      logo_path: "pytorch-logo.png",
+      color_code: "#1b4332"
+    },
+    {
+      title: "TensorFlow",
+      subtitle: "Expertise: Neural Network Architectures & Model Training",
+      logo_path: "tflogo.png",
+      color_code: "#1b4332"
+    },
+    {
+      title: "SQL",
+      subtitle: "Expertise: Complex Queries, Data Curation & Analytical Window Functions",
+      logo_path: "sqllogo.png",
+      color_code: "#5f0f40"
+    },
+    {
+      title: "Snowflake",
+      subtitle: "Expertise: Cloud Data Warehousing & Large-Scale Data Operations",
+      logo_path: "snowflake_logo.png", // Uses an existing template pattern block or custom snowflake icon
+      color_code: "#5f0f40"
+    },
+    {
+      title: "Tableau",
+      subtitle: "Expertise: Interactive Dashboards & Exploratory Metrics Visualization",
+      logo_path: "tableaulogo.png",
+      color_code: "#b56576"
+    }
+  ]
 };
 
 const openSource = {
-  /* Your Open Source Section to View Your Github Pinned Projects */
-  /* To know how to get github key look at readme.md */
-
   githubConvertedToken: "Your Github Converted Token",
-  githubUserName: "Your Github Username"
+  githubUserName: "renujakkampudi"
 };
-
-
-
 
 const contactInfo = {
   title: "Contact Me ☎️",
-  subtitle: "Discuss a project or just want to say hi my inbox is open for all",
-  number: "+1(515) 981-8460",
-  email_address: "rushabh.patel5@gmail.com"
+  subtitle: "Discuss a project or just want to say hi? My inbox is open for all!",
+  number: "+1 (602) 880-6244",
+  email_address: "jakkampudi.renu2002@gmail.com"
 };
 
 export {
